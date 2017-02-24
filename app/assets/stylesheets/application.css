@@ -53,6 +53,10 @@ a {
   color: #70D7EE;
 }
 
-.newhouse, .edithouse, .editcharacter, .newcharacter {
+.newhouse, .edithouse, .editcharacter, .newcharacter, .sign, .field {
   color: #70D7EE;
+}
+
+.sign {
+  text-align: center;
 }
