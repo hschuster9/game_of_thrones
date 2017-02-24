@@ -1,4 +1,5 @@
-<h3>Edit <%= @house.name %> </h3>
+<div class="edithouse">
+<h3>Edit: <%= @house.name %> </h3>
 
 <%= form_for @house do |f| %>
   <%= f.label :name %>
@@ -13,3 +14,5 @@
 <%= form_for @house, method: :delete do |f| %>
 <%= f.submit "Delete", class: "btn-delete"%>
 <% end %>
+
+</div>

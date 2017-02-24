@@ -1,4 +1,5 @@
-<h2> Add New Character </h2>
+<div class="newcharacter">
+<h2> Add New Character for: <%= @house.name %> </h2>
 
 <%= form_for [@house, @character] do |f| %>
 
@@ -13,3 +14,4 @@
 
   <%= f.submit "Create" %>
   <% end %>
+</div>

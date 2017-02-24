@@ -24,20 +24,35 @@
   margin: 0 auto;
 }
 
+
 body {
   font-family: 'NTR', sans-serif;
   color: black;
-
+  background-image: url('background.jpg');
+}
+a {
+  color: #70D7EE;
+  text-decoration: none;
 }
 
 .mainpage, .housespage  {
-  background-color: #f0f0f5;
+  background-color: #898b8e;
   width: 40%;
   display: block;
   margin: 0 auto;
   text-align: center;
+  border: 5px solid;
+  border-radius: 30px;
 }
 
 .mainpage p, .housespage p {
   font-size: 15px;
+}
+
+.housenameshow {
+  color: #70D7EE;
+}
+
+.newhouse, .edithouse, .editcharacter, .newcharacter {
+  color: #70D7EE;
 }

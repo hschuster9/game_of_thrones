@@ -1,6 +1,6 @@
 <div class="backtohouses">
-<h4> <%= link_to "Back to All Houses", houses_path %></h4>
-<%= link_to "Add New Character", new_house_character_path(@house) %>
+<h3> <%= link_to "Back to All Houses", houses_path %></h3>
+<p><%= link_to "Add New Character", new_house_character_path(@house) %></p>
 </div>
 <div class="housenameshow">
 <h2><%= @house.name %> | <%= link_to "(Edit)", edit_house_path %></h2>
