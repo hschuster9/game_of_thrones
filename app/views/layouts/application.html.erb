@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>GameOfThrones</title>
+    <title>Game of Thrones</title>
     <%= csrf_meta_tags %>
-
+    <link href="https://fonts.googleapis.com/css?family=NTR" rel="stylesheet">
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
+<div class="layout">
   <body>
+
+    <div class="logo">
+      <%= image_tag('Logo_Game_of_Thrones.png', size: "550x150") %>
+    </div>
     <%= yield %>
   </body>
+</div>
 </html>

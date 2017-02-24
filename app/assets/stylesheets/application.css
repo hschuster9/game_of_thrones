@@ -14,8 +14,30 @@
  *= require_self
  */
 
-
- @font-face {
-   font-family: "thrones";
-   src: font-url('game_of_thrones.ttf') format("truetype");
+ .createnewhouse, .housenameshow, .backtohouses{
+   text-align: center;
  }
+
+.logo {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+body {
+  font-family: 'NTR', sans-serif;
+  color: black;
+
+}
+
+.mainpage, .housespage  {
+  background-color: #f0f0f5;
+  width: 40%;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.mainpage p, .housespage p {
+  font-size: 15px;
+}

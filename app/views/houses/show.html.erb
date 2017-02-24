@@ -1,10 +1,12 @@
+<div class="backtohouses">
 <h4> <%= link_to "Back to All Houses", houses_path %></h4>
-
-<h2><%= @house.name %> <%= link_to "(Edit)", edit_house_path %></h2>
-
-<% @house.characters.each do |character| %>
- <ul><h4><%= character.name %> | <%= character.position %> <%= link_to "(edit)", edit_house_character_path(@house, character)%></h4><p><%= character.quote %><p></ul>
-
-<% end %>
-
 <%= link_to "Add New Character", new_house_character_path(@house) %>
+</div>
+<div class="housenameshow">
+<h2><%= @house.name %> | <%= link_to "(Edit)", edit_house_path %></h2>
+</div>
+<% @house.characters.each do |character| %>
+<div class="housespage">
+ <ul><h4><%= character.name %> | <%= character.position %> <%= link_to "(edit)", edit_house_character_path(@house, character)%></h4><p><%= character.quote %><p></ul>
+</div>
+<% end %>
